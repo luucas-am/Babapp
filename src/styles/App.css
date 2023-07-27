@@ -1,0 +1,17 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border: 0;
+    background-color: #53c930;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.3rem 0.7rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #358f1b;
+}

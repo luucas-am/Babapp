@@ -1,0 +1,108 @@
+@media (min-width: 650px) {
+    .dropdown-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+	.brightness-btn, .login {
+		display: none !important;
+	}
+}
+
+.utils {
+	display: flex;
+	align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: #858585 0px 0px 0px 3px;
+    width: 300px;
+    
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.menu-item {
+    padding: 0 2rem 0 0;
+    border-bottom: 1px solid #858585;
+}
+
+.menu > li > button {
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.dropdown-brightness {
+    margin: 0 1rem 0 0;
+}
+
+.dropdown-brightness-img {
+    width: 35px;
+}
+
+.brightness-btn, .brightness-btn:hover, .dropdown-btn, .dropdown-btn:hover {
+    background-color: transparent;
+}
+
+.dropdown-img {
+    width: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.brightness-img {
+    width: 40px;
+	position: relative;
+	top: 5px;
+}
+
+.brightness-img:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(5deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-5deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(5deg);
+	}
+
+	80% {
+		transform: rotate(-5deg);
+	}
+
+	90% {
+		transform: rotate(5deg);
+	}
+}
